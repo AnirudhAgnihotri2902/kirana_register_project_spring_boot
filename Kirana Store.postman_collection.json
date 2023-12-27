@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "120e5cbe-2341-4b71-a9a1-b818aa2cc2c3",
+		"name": "Kirana Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32021744"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n        \"firstName\": \"Aniruddh\",\n        \"lastName\": \"abcdd\",\n        \"emailId\": \"ebwfhbhw\",\n        \"createdAt\": \"2023-12-27T13:09:06.446+00:00\",\n        \"updatedAt\": \"2023-12-27T13:09:06.446+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/9d182fa9-7778-440a-a81f-978b2fa29d15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"9d182fa9-7778-440a-a81f-978b2fa29d15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/9d182fa9-7778-440a-a81f-978b2fa29d15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"9d182fa9-7778-440a-a81f-978b2fa29d15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"firstName\": \"Anirudhhh\",\n        \"lastName\": \"abcdd\",\n        \"emailId\": \"ebwfhbhw\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/9d182fa9-7778-440a-a81f-978b2fa29d15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"9d182fa9-7778-440a-a81f-978b2fa29d15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "exchange",
+			"item": [
+				{
+					"name": "Get Fx Rates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/fx-rates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"fx-rates"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{
+					"name": "Create Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userID\": \"4f4f34b4-4e68-4075-88ab-b6b8cba73c40\",\n    \"assetType\": \"MXN\",\n    \"transactionType\": \"BUY\",\n    \"price\": 1,\n    \"quantity\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transactions By User ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/transactions/4f4f34b4-4e68-4075-88ab-b6b8cba73c40",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"transactions",
+								"4f4f34b4-4e68-4075-88ab-b6b8cba73c40"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTransactions Between Dates",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startDate\": \"2023-12-27T18:09:24.240+00:00\",\n    \"endDate\": \"2023-12-27T18:09:29.240+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/transactions/dates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"transactions",
+								"dates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaction by transaction ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/transactions/dd8cb353-68bb-426c-b18c-a97b8a7d8fad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"transactions",
+								"dd8cb353-68bb-426c-b18c-a97b8a7d8fad"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Balance",
+			"item": [
+				{
+					"name": "User Asset Balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/balance/4f4f34b4-4e68-4075-88ab-b6b8cba73c40/USD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"balance",
+								"4f4f34b4-4e68-4075-88ab-b6b8cba73c40",
+								"USD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Balance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userID\":\"4f4f34b4-4e68-4075-88ab-b6b8cba73c40\",\n    \"assetType\":\"USD\",\n    \"balance\": 10000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Balance",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userID\":\"4f4f34b4-4e68-4075-88ab-b6b8cba73c40\",\n    \"assetType\":\"USD\",\n    \"balance\": 50000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/users/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
