@@ -5,6 +5,7 @@ The Kirana Register Backend Service is a SpringBoot-based application designed t
 ## LLD and HDL - 
 
 #### Database: PostgreSQL
+- Postgres excels for transactions: ACID compliance, reliability, data integrity, concurrency, extensibility, open-source, community, scalability, cross-platform support, and a rich ecosystem.
 #### Schema
 ##### Class: Balance
 ###### Fields:
@@ -146,13 +147,22 @@ This class is intended to be used with a JPA implementation (such as Hibernate) 
 
 
 
-### Functional Requirement:-
-1. Need an API for recording transactions. Transactions can be recorded in both INR
-   and USD. Refer to this API for currency conversion -
-   https://api.fxratesapi.com/latest.
-2. An API for displaying transactions with the capability to group them for daily reports.
-3. You can use a database of your choice SQL or NoSQL.
-4. Tech Stack - JAVA and SpringBoot
+# Installation:
+1. Clone repository:
+```bash
+$ git clone https://github.com/AnirudhAgnihotri2902/kirana_register_project_spring_boot.git
+```
+2. run Docker-compose File
+```bash
+$ docker-compose up
+```
+3. Run application:
+```
+  build KiranaRegisterProjectApplication File
+```
+
+### Postman API JSON Package
+[Postman JSON File](https://github.com/AnirudhAgnihotri2902/kirana_register_project_spring_boot/blob/main/Kirana%20Store.postman_collection.json)
 
 
 
